@@ -1,0 +1,57 @@
+1-insert into estado (uf, nome) values ('UF_do_estado', 'Nome_do_estado')
+
+2-insert into cidade (nome, estado_id) values ('nome da cidadde', id do estado)
+
+3- delete from estado where id = 4
+delete from estado where id = 5
+delete from estado where id = 6
+delete from estado where id = 7
+delete from estado where id = 8
+delete from estado where id = 9
+delete from estado where id = 10
+delete from estado where id = 11
+delete from estado where id = 12
+delete from estado where id = 13
+delete from estado where id = 14
+delete from estado where id = 15
+delete from estado where id = 16
+delete from estado where id = 17
+delete from estado where id = 18
+delete from estado where id = 19
+delete from estado where id = 20
+delete from estado where id = 21
+delete from estado where id = 22
+delete from estado where id = 23
+delete from estado where id = 24
+delete from estado where id = 25
+delete from estado where id = 26
+delete from estado where id = 27
+delete from estado where id = 30
+delete from estado where id = 31
+
+4 - insert into cidade (nome, estado_id) values ('Santos', 29)
+insert into cidade (nome, estado_id) values ('São Carlos', 29)
+insert into cidade (nome, estado_id) values ('Franca', 29)
+insert into cidade (nome, estado_id) values ('Jundiaí', 29)
+
+5-update cidade
+set nome = 'Lunardelli'
+where id = 11
+
+update cidade
+set nome = 'Jandaia'
+where id = 17
+
+update cidade
+set nome = 'Cidade Canção'
+where id = 10
+
+6-select uf.uf, cid.nome
+from cidade cid, estado uf
+where uf.id = cid.estado_id
+
+7-select count(id), estado_id
+from cidade
+group by estado_id
+
+8-insert into pessoa(endereco) values ('COMERCIAL')
