@@ -29,6 +29,8 @@ delete from estado where id = 27
 delete from estado where id = 30
 delete from estado where id = 31
 
+delete from estado where not exists (select * from cidade where cidade.estado_id = estado.id)
+
 4 - insert into cidade (nome, estado_id) values ('Santos', 29)
 insert into cidade (nome, estado_id) values ('São Carlos', 29)
 insert into cidade (nome, estado_id) values ('Franca', 29)
@@ -50,11 +52,17 @@ where id = 10
 from cidade cid, estado uf
 where uf.id = cid.estado_id
 
-7-select count(id), estado_id
-from cidade
+7-select count(id), estado_id, (select e.uf from estado e where e.id = c.estado_id) as UF
+from cidade c
 group by estado_id
 
 8-	
 	Foi adicionado um campo novo tipo_endereco na tabela endereco:
 	ALTER TABLE endereco
 	ADD tipo_endereco VARCHAR(15);
+
+	
+9- 
+	insert into pessoa (nome, cpf) values ('joao', '101.101.020-65')
+	insert into pessoa (nome, cpf) values ('Maria', '425.102.032-85')
+	insert into pessoa (nome, cpf) values ('José', '222.102.8324-85')
