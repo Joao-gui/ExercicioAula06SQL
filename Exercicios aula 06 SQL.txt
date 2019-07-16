@@ -54,4 +54,7 @@ where uf.id = cid.estado_id
 from cidade
 group by estado_id
 
-8-insert into pessoa(endereco) values ('COMERCIAL')
+8-	
+	Foi adicionado um campo novo tipo_endereco na tabela endereco:
+	ALTER TABLE endereco
+	ADD tipo_endereco VARCHAR(15);
