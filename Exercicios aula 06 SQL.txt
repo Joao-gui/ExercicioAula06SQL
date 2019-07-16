@@ -87,6 +87,26 @@ group by estado_id
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (3, 5)
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (3, 6)
 
-10-
+17-
+	select rec.id as numero_recibo,
+	   rec.data_recibo,
+       rec.valor,
+       rec.emissor_id as Emitente,
+       cli.nome as nome_cliente,
+       uf_cli.nome as cliente_estado
+  from recibo rec, pessoa cli, pessoa_endereco pend_cli, endereco end_cli, cidade cid_cli, estado uf_cli, 
+  		pessoa emi, pessoa_endereco pend_emi, endereco end_emi, cidade cid_emi, estado uf_emi
+ where cli.id = rec.pessoa_id 
+   and pend_cli.pessoa_id = cli.id
+   and pend_cli.endereco_id = pend_cli.id
+   and cid_cli.id = end_cli.cidade_id 
+   and uf_cli.id = cid_cli.estado_id
+   and end_cli.tipo_endereco = 'Residencial'
+   and rec.emissor_id = emi.id
+   and pend_emi.pessoa_id = emi.id
+   and pend_emi.endereco_id = pend_emi.id
+   and cid_emi.id = end_emi.cidade_id 
+   and uf_emi.id = cid_emi.estado_id
+   and end_emi.tipo_endereco = 'Comercial'
 	
 	
