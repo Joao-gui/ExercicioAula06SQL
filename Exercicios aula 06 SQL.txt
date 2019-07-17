@@ -123,6 +123,16 @@ group by estado_id
 	where pes.id = pes_end.pessoa_id  
 	and end.id = pes_end.endereco_id
 	
+13-
+	delete pes.nome as Nome,end.uf as Estado, (select nome from cidade where id = end.cidade_id) as Cidade
+	from pessoa_endereco pes_end, pessoa pes, endereco end
+	where pes.id = pes_end.pessoa_id  
+	and end.id = pes_end.endereco_id 
+	and end.cidade_id = 18
+
+14-
+
+
 
 
 17-
