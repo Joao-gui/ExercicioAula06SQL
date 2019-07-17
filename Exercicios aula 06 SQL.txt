@@ -117,6 +117,13 @@ group by estado_id
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (6, 11)
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (7, 12)
 
+12-
+	select pes.nome as Nome, end.cidade_id as Cidade
+	from pessoa_endereco pes_end, pessoa pes, endereco end
+	where pes.id = pes_end.pessoa_id  
+	and end.id = pes_end.endereco_id
+	
+
 
 17-
 	select rec.id as numero_recibo,
