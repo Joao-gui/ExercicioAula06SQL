@@ -154,8 +154,8 @@ group by estado_id
 16-
 	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
 	values (10, 1, 8, 'Entrega de software de Recibo', '17/07/2019', '22000')
-	-
-	
+	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
+	values (9, 2, 8, 'Entrega de software de Cotação do Dolar', '20/07/2019', '32500')	
 
 
 
