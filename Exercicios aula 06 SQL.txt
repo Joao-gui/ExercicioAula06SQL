@@ -134,6 +134,27 @@ group by estado_id
 	update endereco
 	set cep = '00000000'
 	where tipo_endereco = 'RESIDENCIAL'
+
+15- 
+	-insert into pessoa (nome, cpf) values ('DB1', '88488234000170')
+	-insert into pessoa (nome, cpf) values ('FCV', '66660457000130')
+	-insert into pessoa (nome, cpf) values ('USP', '55922530000189')
+
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (10, 'PR', 'Av. Advogado Horácio Raccanello Filho', '5410', '87020-035', 'COMERCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (10, 'PR', 'Av. Advogado Horácio Raccanello Filho', '5950', '87020-035', 'COMERCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (22, 'SP', 'Av. Prof. Luciano Gualberto', '3520', '05508-900', 'COMERCIAL'
+
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (8, 13)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (9, 14)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (10, 15)
+
+16-
+	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
+	values (10, 1, 8, 'Entrega de software de Recibo', '17/07/2019', '22000')
+	-
 	
 
 
