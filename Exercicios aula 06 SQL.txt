@@ -48,13 +48,17 @@ update cidade
 set nome = 'Cidade Canção'
 where id = 10
 
-6-select uf.uf, cid.nome
-from cidade cid, estado uf
-where uf.id = cid.estado_id
+6-
+	select uf.uf, cid.nome
+	from cidade cid, estado uf
+	where uf.id = cid.estado_id
 
-7-select count(id), estado_id, (select e.uf from estado e where e.id = c.estado_id) as UF
-from cidade c
-group by estado_id
+
+7-
+	select count(id) as Quantidade_Cidades, (select e.uf from estado e where e.id = c.estado_id) as UF
+	from cidade c
+	group by estado_id
+
 
 8-	
 	Foi adicionado um campo novo tipo_endereco na tabela endereco:
@@ -185,5 +189,8 @@ group by estado_id
    and cid_emi.id = end_emi.cidade_id 
    and uf_emi.id = cid_emi.estado_id
    and end_emi.tipo_endereco = 'Comercial'
+
+18- 
+	
 	
 	
