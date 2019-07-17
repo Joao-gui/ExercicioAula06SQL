@@ -107,7 +107,15 @@ group by estado_id
 	
 11-
 	-insert into pessoa (nome, cpf) values ('Claudio', '457.159.875-11')
-	
+	-insert into pessoa (nome, cpf) values ('Ana', '647.885.348-55')
+
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (6, 'SC', 'Av. São Pedro', '87', '89803-064', 'COMERCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (7, 'SC', 'Rua 7 de Maio', '98', '89052-050', 'COMERCIAL')
+
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (6, 11)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (7, 12)
 
 
 17-
