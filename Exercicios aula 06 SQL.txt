@@ -67,7 +67,7 @@ group by estado_id
 	insert into pessoa (nome, cpf) values ('Maria', '425.102.032-85')
 	insert into pessoa (nome, cpf) values ('José', '222.102.8324-85')
 
-	-insert into endereco (cidade_id, uf, logadouro, numero, cep, tipo_endereco) 
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
 	values (9, 'PR', 'Rua Geronio', '277', '06542-089', 'COMERCIAL')
 	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
 	values (9, 'PR', 'Rua Arlindo', '4520', '80010-010', 'RESIDENCIAL')
@@ -86,6 +86,29 @@ group by estado_id
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (2, 2)
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (3, 5)
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (3, 6)
+
+10-
+	insert into pessoa (nome, cpf) values ('Cecilia', '126.175.190-34')
+	insert into pessoa (nome, cpf) values ('Irene', '558.967.390-51')
+
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (18, 'SP', 'Rua Fortaleza', '488', '14030-680', 'COMERCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, complemento, cep, tipo_endereco) 
+	values (18, 'SP', 'Rua Amapá', '645', 'Sobre Loja', '14055-240', 'RESIDENCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (19, 'SP', 'Rua Borges', '7885', '11015-145', 'COMERCIAL')
+	-insert into endereco (cidade_id, uf, logradouro, numero, cep, tipo_endereco) 
+	values (19, 'SP', 'Rua João Guerra', '324', '11015-140', 'RESIDENCIAL')
+
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (4, 7)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (4, 8)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (5, 9)
+	-insert into pessoa_endereco (pessoa_id, endereco_id) values (5, 10)
+	
+11-
+	-insert into pessoa (nome, cpf) values ('Claudio', '457.159.875-11')
+	
+
 
 17-
 	select rec.id as numero_recibo,
