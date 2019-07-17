@@ -151,12 +151,16 @@ group by estado_id
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (9, 14)
 	-insert into pessoa_endereco (pessoa_id, endereco_id) values (10, 15)
 
-16-
 	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
 	values (10, 1, 8, 'Entrega de software de Recibo', '17/07/2019', '22000')
 	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
-	values (9, 2, 8, 'Entrega de software de Cotação do Dolar', '20/07/2019', '32500')	
+	values (9, 2, 8, 'Entrega de software de Cotação do Dolar', '20/07/2019', '32500')
 
+16-
+	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
+	values (10, 1, 9, 'Comprovante de Matricula', '08/08/2019', '150')
+	-insert into recibo (cidade_id, pessoa_id, emissor_id, descricao, data_recibo, valor) 
+	values (12, 3, 10, 'Comprovante da Mensalidade do Mês de setembro', '08/09/2019', '1500')
 
 
 
