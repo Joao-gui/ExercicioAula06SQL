@@ -131,6 +131,10 @@ group by estado_id
 	and end.cidade_id = 18
 
 14-
+	update endereco
+	set cep = '00000000'
+	where tipo_endereco = 'RESIDENCIAL'
+	
 
 
 
